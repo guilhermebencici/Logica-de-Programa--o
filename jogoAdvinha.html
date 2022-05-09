@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Adivinha</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+    
+    var mostra = function (frase) {
+        document.write(frase);
+    };
+
+    var numeroPensadoComCasasDecimais = Math.round(Math.random() * 100);
+    
+    var numeroPensado = Math.random(numeroPensadoComCasasDecimais);
+
+    var chute = prompt("Acabei de pensar em um número, qual você acha que é? ");
+    if(chute == numeroPensado) {
+        mostra("CAAAAAARAI!! Tu é brabo memo, hein?! Pensei no " + numeroPensado + " mesmo");
+    }
+    else {
+        mostra("HAHAHA. ERROOOOU, migo. Eu jurooo que não pensei neste número! " + numeroPensado);
+    }
+    
+
+</script>
+</html>

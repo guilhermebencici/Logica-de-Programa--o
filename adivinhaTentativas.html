@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivinha com Tentativas </title>
+</head>
+<body>
+    
+</body>
+
+<script>
+    var numeroPensado = Math.round(Math.random() * 10);
+    var numeroDaTentativa = 1;
+    while(numeroDaTentativa <=3) {
+        var chute = prompt("Vamos ver se você é brabo mesmo, qual foi o numero que eu pensei? ");
+        
+        if (chute == numeroPensado) {
+            alert("Carai, tu é brabo mesmo! Acertou na mosca!!!");
+            break;
+        } else {
+            alert("Hahahahah, erroooooou! Vou deixar você tentar mais uma vez, bora lá! ");
+        }
+        
+        numeroDaTentativa++;
+    }
+</script>
+</html>

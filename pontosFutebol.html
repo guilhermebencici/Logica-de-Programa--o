@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pontos Futebol</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+        var mostra = function (frase) {
+        document.write(frase);
+        pulaLinha();
+    };
+
+    var vitorias = prompt("Quantos jogos o Timão venceu?");
+    var empates = prompt("Quantos jogos o Timão empatou?");
+    var pontos = (vitorias * 3) + parseInt(empates);
+
+    if (pontos == 28){
+        mostra("Tudo empatado! Bora que bora, lets que lets!!");
+    }
+
+    if (pontos > 28) {
+        mostra("Nosso time está indo bem melhor que o Palmeiras");
+    } 
+    else {
+        mostra("Vishe, o Palmeiras ainda está na frente. CREDOOO");
+    } 
+
+    
+    mostra("Nosso time tem " + pontos + " pontos!");
+
+
+
+
+</script>
+</html>
